@@ -1,0 +1,3 @@
+/Users/collinj/programming/openGL/OpenGL_window_tutorial/build/CMakeFiles/OpenGLApp.dir
+/Users/collinj/programming/openGL/OpenGL_window_tutorial/build/CMakeFiles/edit_cache.dir
+/Users/collinj/programming/openGL/OpenGL_window_tutorial/build/CMakeFiles/rebuild_cache.dir

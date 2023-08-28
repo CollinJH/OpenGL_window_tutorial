@@ -43,3 +43,25 @@ that we can run with `./OpenGLApp`
 
 
 3. using CMAKE
+    Create a file called `CMakeLists.txt` <br>
+    This is the code to go inside <br>
+
+    ```
+    cmake_minimum_required(VERSION 3.12)
+
+    project(OpenGLApp)
+
+    find_package(glfw3 3.3.8 REQUIRED)
+
+    add_executable(OpenGLApp main.cpp)
+    target_link_libraries(OpenGLApp glfw)
+    target_link_libraries(OpenGLApp "-framework OpenGL")
+
+    ```
+    now create a build directory and using cmake..
+
+    `mkdir build`
+    `cd build`
+    `cmake ..`
+    `make`
+
