@@ -60,8 +60,8 @@ that we can run with `./OpenGLApp`
     ```
     now create a build directory and using cmake..
 
-    `mkdir build`
-    `cd build`
-    `cmake ..`
-    `make`
+    `mkdir build` <br>
+    `cd build` <br>
+    `cmake ..` <br>
+    `make` <br>
 
