@@ -7,22 +7,28 @@ We want to use a library called GLFW to allow us simple cross platform accessabi
 in our terminal install GLFW using homebrew <br>
 `brew install glfw` <br>
 
-now we can include the GLFW/glfw3.h in our c++ code, <br>
-`main.cpp` shows us example of code that will open an OpenGL window <br>
+now we can include the <br> `GLFW/glfw3.h`<br>
+in our c++ code <br>
+`main.cpp` <br>
+shows us example of code that will open an OpenGL window <br>
 
-the tricky part now is getting our code to compile and link properly <br>
+## Compiling and linking
 
-first you can g++ -o OpenGLApp main.cpp -lglfw -framework OpenGL <br>
+first try <br>
+`g++ -o OpenGLApp main.cpp -lglfw -framework OpenGL` <br>
 this may give you an error that the library is not linked properly though <br>
 this is because the linker -l cannot find the proper path <br> <br>
 
-What we will do is find the proper path <br>
+What we will do is find the proper path in our terminal<br>
 `brew info glfw` <br>
 
 This will reveal your proper path and we can include it like so <br>
-`g++ -o OpenGLApp main.cpp -I/usr/local/Cellar/glfw/x.x.x/include -L/usr/local/Cellar/glfw/x.x.x/lib -lgflw -framework OpenGL` <br>
+`g++ -o OpenGLApp main.cpp -I/usr/local/Cellar/glfw/x.x.x/include \` <br>
+ `-L/usr/local/Cellar/glfw/x.x.x/lib -lgflw -framework OpenGL` <br>
 
-This should properly compile and create and executable <br>
+This should properly compile and create an executable <br>
+
+that we can run with `./OpenGLApp`
 
 ## How can we shorten this process?
 
